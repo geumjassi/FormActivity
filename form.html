@@ -1,33 +1,79 @@
 <!DOCTYPE html>
 <html>
- <head>
-    <title>Form Activity</title>
-</head>
-    <body>
-        <form action = "Script URL" method ="GET POST">
-        <h1>Registration Form</h1>
-    First name: <input type= "text" name="firstname"/>
-        </br>
-    Last name:<input type="text" name="lastname"/>
-        </br>
-    Nickname: <input type="text" name="nickname"/>
-        </br>
-    Email: <input type="email" name="email"/>
-        </form>
-    Password: <input type="password" name="password"/>
-        </br>
-        Date of Birth: <input type="date" name="birthday"/>
-        </br>
-        Gender
-        <input type="radio" name="Male" value="male"/> Male
-        <input type="radio" name="Female" value="female"/> Female
-        </br>
-        Mobile: <input type="text" name="Male"/>
-        </br>
-        Address: <textarea name="address" cols="30" rows="10">Enter address...</textarea>
-    </br>
-        <button class="button button1">Submit</button>
-        <button class="button button2">Reset</button>
-    </body>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+        <title>Form Activity</title>
+    </head>
 
+    <style>
+            
+            div.form{
+                display: block;
+                text-align: center;
+            }
+
+            form{
+                display: inline-block;
+            margin-left: auto;
+                margin-right: auto;
+                text-align: justify;
+                padding: 20px 20px 20px 20px;
+                border-radius: 6px; 
+                background-color: white;
+            }
+            body{
+                
+            background-color: lightslategray;
+                font-family: 'Oswald', sans-serif;
+            }
+
+            #button1 {
+                background-color:green;
+                color: white;
+            }
+            #button2{
+                background:red;
+                color: white;
+
+            }
+    </style>
+        <body>
+            <div class="form">
+                <form action = "Script URL" method ="GET POST">
+                    <h1>Registration Form</h1>
+                        First name: <br>
+                            <input type= "text" name="firstname"/>
+                            </br>
+                        Last name: 
+                            <br>
+                            <input type="text" name="lastname"/>
+                            </br>
+                        Nickname: <br> 
+                            <input type="text" name="nickname"/>
+                            </br>
+                        Email: <br> 
+                            <input type="email" name="email"/>
+                            </br>
+                        Password: <br>
+                            <input type="password" name="password"/>
+                            </br>
+                        Date of Birth: <br>
+                            <input type="date" name="birthday"/>
+                            </br>
+                        Gender <br>
+                            <input type="radio" name="Male" value="male"/> Male
+                            <input type="radio" name="Female" value="female"/> Female
+                            <input type="radio" name="Other" value="other"/> Other
+                            </br>
+                        Mobile: <br> <input type="text" name="Male"/>
+                            </br>
+                        Address: <br> <textarea name="address" cols="20" rows="10">Enter address...</textarea>
+                            </br>
+                            <button id="button1">Submit</button>
+                            <button id="button2">Reset</button>
+                </form>
+            </div>
+        </body>
 </html>
